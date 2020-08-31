@@ -13,7 +13,6 @@ function removeIfNotUnique(arr){
       if(arr[i] !== currentElement){
         currentElement = arr[i]
         result.push(currentElement)
-        console.log("i: ", i)
       }
     }
     return result;
