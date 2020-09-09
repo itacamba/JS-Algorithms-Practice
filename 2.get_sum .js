@@ -1,5 +1,5 @@
-let alg2 = document.getElementById('2')
-alg2.addEventListener("click", () => {
+let algo_2 = document.getElementById('2')
+algo_2.addEventListener("click", () => {
     getSum(-1,2)
 })
 

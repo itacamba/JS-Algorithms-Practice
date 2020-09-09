@@ -1,5 +1,5 @@
-let alg1 = document.getElementById('1')
-alg1.addEventListener("click", () => {
+let algo_1 = document.getElementById('1')
+algo_1.addEventListener("click", () => {
     removeIfNotUnique(['A','A','A','A','B','B','B','C','C','D','A','A','B','B','B'])
 })
 

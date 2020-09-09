@@ -1,5 +1,5 @@
-let alg = document.getElementById('3')
-alg.addEventListener("click", () => {
+let algo_3 = document.getElementById('3')
+algo_3.addEventListener("click", () => {
     tribonacci([1,1,1], 5)
 })
 
