@@ -1,6 +1,6 @@
 let algo_1 = document.getElementById('1')
 algo_1.addEventListener("click", () => {
-    removeIfNotUnique(['A','A','A','A','B','B','B','C','C','D','A','A','B','B','B'])
+    removeIfNotUnique(['A','A','A','B','B','C','C','D','A','A','B','B'])
 })
 
 function removeIfNotUnique(arr){
@@ -15,5 +15,6 @@ function removeIfNotUnique(arr){
         result.push(currentElement)
       }
     }
+    console.log("Unique in order for ['A','A','A','B','B','C','C','D','A','A','B','B'] is: ", result)
     return result;
   }

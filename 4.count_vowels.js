@@ -16,6 +16,6 @@ function getCount(str) {
         vowelsCount += 1
       }
     }
-    console.log("vowels quantity: ", vowelsCount)
+    console.log("vowels quantity for 'hello my beautiful dev community' : ", vowelsCount)
     return vowelsCount;
   }

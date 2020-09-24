@@ -14,7 +14,7 @@ function findOdd(A) {
     for (const key in obj) {
     if(obj[key] % 2 === 1 && key > biggestOdd) biggestOdd = key
     }
-    console.log("biggest odd number is: ", +biggestOdd)
+    console.log(`biggest odd number for ${A} is: `, +biggestOdd)
     return +biggestOdd
   }
   
