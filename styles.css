@@ -26,3 +26,79 @@ h1{
 .algorithms-list li:hover{
     background: rgb(83, 83, 226);
 }
+.console{
+    width: 86%;
+    background: #292c3b;
+    border-radius: 5px;
+    margin: 0 7%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.description{
+    width: 50%;
+    color: #f2f2f2;
+}
+.description h3{
+    margin-bottom: 10px;
+    color: #b530dd;
+}
+.code-input-output{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.my-code{
+    width: 50%;
+    display: none;
+}
+.my-code p {
+    color: #f2f2f2;
+}
+/*spans*/
+.p-comment{
+    color: #afc8ff;
+    margin-left: 20px;
+}
+.var-declaration{
+    font-weight: 600;
+    color: #17dad0;
+}
+.function-declaration{
+    color: #a976d3;
+    font-weight: 600;
+}
+.blue-bold{
+    color: #3d95dd;
+    font-weight: 600;;
+}
+.pink-bold{
+    color: #d43ee2;
+    font-weight: 600;
+}
+
+.input-output{
+    width: 400px;
+    background-color: #f2f2f241;
+    padding: 15px;
+}
+.input-output h2{
+    color: #26b11a
+}
+.output-result{
+    color: rgba(136, 15, 15, 0.972);
+    font-weight: 600;
+}
+.input-error{
+    color: rgb(230, 64, 64);
+    font-weight: 600;
+}
+label{
+    margin-bottom: 5px;
+}
+input{
+    margin-bottom: 20px;
+    height: 30px;
+    outline: none;
+    padding-left: 5px;
+}

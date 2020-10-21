@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./css/algo-9.css">
     <title>Algorithms</title>
 </head>
 <body>
@@ -17,7 +18,52 @@
         <li id="6">6.- Find the biggest odd number in array</li>
         <li id="7">7.- Reverse a string</li>
         <li id="8">8.- Draw a Diamond of Size 7</li>
+        <li id="9">9.- Find smallest kth number in a list</li>
+        <div class="console console-9">
+            <div class="description">
+                <h3>Description</h3>
+                <p>
+                    Find smallest Kth number in an unsorted array, if
+                    smallest Kth number is not present, return null.
+                </p>
+            </div>
+            <div class="code-input-output">
+                <div class="my-code">
+                    <p>
+                        <span class="blue-bold">function</span> smallestElement(arr,k)<span class="var-declaration">{</span><br>
+                        &emsp;<span class="p-comment">// sort arr in ascending order</span><br>
+                        <span class="var-declaration">let</span> sortedArr = arr.sort((a,b) => a - b)<br>
+                        &emsp;<span class="p-comment">// push the first element from the sortedArr</span><br>
+                        <span class="var-declaration">let</span> uniqueNums = [sortedArr[0]]<br>
+                        <span class="p-comment">// populate the array of unique elements</span><br>
+                                &emsp;<span class="blue-bold">for</span>(let i = 1; i < sortedArr.length; i++)<span class="var-declaration">{</span><br>
+                                &emsp;&emsp;if(sortedArr[i] !== sortedArr[i - 1])<span class="var-declaration">{</span><br>
+                                &emsp;&emsp;&emsp;uniqueNums.push(sortedArr[i])<br>
+                                &emsp;&emsp;<span class="var-declaration">}</span><br>
+                                &emsp;<span class="var-declaration">}</span><br>
+                                &emsp;<span class="pink-bold">return</span> uniqueNums.length >= k <span class="pink-bold">?</span> uniqueNums[k-1] <span class="pink-bold">:</span> null <br>
+                                <span class="var-declaration">}</span>
+                    </p>
+                </div>
+                <div class="input-output">
+                    <form id="form-9">
+                        <p class="input-error"></p>
+                        <label>Your List Here (format: 1,2,3,4,5)</label>
+                        <input id="arr-input-9" type="text">
+                        <p class="input-error"></p>
+                        <label >Kth Number</label>
+                        <input id="kth-input-9" type="text">
+                        <input value="Get Kth Number" type="submit">
+                    </form>
+                    <h2>Result</h2>
+                    <div class="output-result">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
     </ul>
+    <script src="index.js"></script>
     <script src="1.unique_in_order.js"></script>
     <script src="2.get_sum .js"></script>
     <script src="3.tribonacci_sequence.js"></script>
@@ -26,5 +72,6 @@
     <script src="6.biggest_odd.js"></script>
     <script src="7.reverse_string.js"></script>
     <script src="8.draw_diamond.js"></script>
+    <script src="9.find_kth_smallest_num.js"></script>
 </body>
 </html>
