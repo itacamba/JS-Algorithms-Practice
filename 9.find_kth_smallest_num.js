@@ -2,7 +2,7 @@
 window.addEventListener("DOMContentLoaded", () => {
 
     const formNode = document.getElementById("form-9") 
-    formNode.addEventListener("submit", handleForm9)
+    // formNode.addEventListener("submit", handleForm9())
     
 })
 
